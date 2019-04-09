@@ -10,13 +10,13 @@ written by Viral Patel
 **Use:**
 
 ```html
-<link href="dyn-fav.php?char=27" rel="icon" type="image/png">
+<link href="favicon.php?char=27" rel="icon" type="image/png">
 ```
 
 or
 
 ```PHP
-<link href="dyn-fav.php?char=<?php echo $char; ?>" rel="icon" type="image/png">
+<link href="favicon.php?char=<?php echo $char; ?>" rel="icon" type="image/png">
 ```
 
 **Try:**<br>
