@@ -38,11 +38,14 @@ Copyright 2019 Igor Gaffling
 
 /* Read the favicon template from png file from current directory */
 /* frame-border.png / frame-card.png / frame-cal.php */
-$im = imagecreatefrompng('frame-border.png'); // Maybe change Font Color if you use an other Image
+//$im = imagecreatefrompng('frame-border.png'); // Maybe change Font Color if you use an other Image
+
+$im = imagecreate(16,16);
+imagecolorallocate($im,0,255,0);
 
 /* Read the Character which needs to be added in Favicon from Request */
 if ( isset($_REQUEST['char']) && !empty($_REQUEST['char']) ) {
-  $int = strval( abs( (int)$_REQUEST['char'] ) );
+  if (is_int($_REQUEST['char'])) $int = strval( abs( (int)$_REQUEST['char'] ) ); else $int = $_REQUEST['char'];
 }
 
 /* Preserve the PNG Image Transparency */
