@@ -1,5 +1,7 @@
 Slightly adapted version of https://github.com/gaffling/PHP-Dynamic-Counter-Favicon
 
+My version is not using a template file.
+
 Original README (more details soon):
 
 PHP-dynamic-Counter-Favicon (maximum two digits)
